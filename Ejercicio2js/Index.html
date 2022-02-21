@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <script>
+        var valor;
+        let array =[];
+        var i = 0 ;
+        var may = 0;
+        while (i <= 5){
+            valor = prompt('Ingrese el valor ' + i +' de ' + 5 +':');
+            array.push(parseInt(valor));
+
+            if(may < array[i] ){
+                may = array[i];
+            }
+            i= i+1;
+            
+        }
+        console.log(array)
+        document.write("El numero mayor del array es:" + may)
+    </script>
+</body>
+</html>
